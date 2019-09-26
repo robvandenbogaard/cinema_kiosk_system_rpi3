@@ -1,7 +1,7 @@
-defmodule KioskSystemRpi3.MixProject do
+defmodule CinemaKioskSystemRpi3.MixProject do
   use Mix.Project
 
-  @app :kiosk_system_rpi3
+  @app :cinema_kiosk_system_rpi3
   @version Path.join(__DIR__, "VERSION")
            |> File.read!()
            |> String.trim()
@@ -36,7 +36,7 @@ defmodule KioskSystemRpi3.MixProject do
     [
       type: :system,
       artifact_sites: [
-        {:github_releases, "letoteteam/#{@app}"}
+        {:github_releases, "robvandenbogaard/#{@app}"}
       ],
       build_runner_opts: build_runner_opts(),
       platform: Nerves.System.BR,
@@ -67,7 +67,7 @@ defmodule KioskSystemRpi3.MixProject do
     [
       files: package_files(),
       licenses: ["Apache 2.0"],
-      links: %{"GitHub" => "https://github.com/letoteteam/#{@app}"}
+      links: %{"GitHub" => "https://github.com/robvandenbogaard/#{@app}"}
     ]
   end
 
