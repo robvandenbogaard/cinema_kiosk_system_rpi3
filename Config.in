@@ -6,3 +6,9 @@
 source "$NERVES_DEFCONFIG_DIR/package/noto-cjk/Config.in"
 source "$NERVES_DEFCONFIG_DIR/package/noto-emoji/Config.in"
 source "$NERVES_DEFCONFIG_DIR/package/noto-fonts/Config.in"
+
+menu "Custom Packages"
+
+source "$NERVES_DEFCONFIG_DIR/package/omxplayer-cinema/Config.in"
+
+endmenu
